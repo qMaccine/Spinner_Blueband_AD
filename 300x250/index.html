@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Minute Maid Spin To Reveal</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.3.1/dist/css/bootstrap-reboot.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  </head>
+  <body style="margin: 0px;">
+    <div id="slot" style="display: block;">
+      <div id="reels">
+        <div class="reel"></div><span id="plus"></span>
+        <div class="reel"></div><span id="plus"></span>
+        <div class="reel"></div><span id="plus"></span>
+        <div class="reel spinning"></div>
+      </div>
+
+    <div id="initialLayout" style="display: block">
+      <img class="spin-button" id="spin"/>
+      <img style="margin-left: 35px;" class="spin-description" id="initialDescription"/>
+    </div>
+
+    <div id="breakfastIncompleteLayout" style="display: none;">
+      <img class="spin-button" id="spin-again"/>
+      <img style="margin-left: 10px; margin-top: 10px;" class="spin-description" id="spin-again-description"/>
+    </div>
+
+    <div id="breakfastCompleteLayout" style="display: none;">
+      <img style="margin: 45px 30px 0px; " class="spin-description" id="spin-complete-description"/>
+    </div>
+    </div>
+    <div id="finalFrame" style="display: none"></div>
+    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CWebAnimations"></script>
+  <script type="text/javascript" src="bundle.js"></script></body>
+</html>
